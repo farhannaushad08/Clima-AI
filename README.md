@@ -1,90 +1,108 @@
 
-# 🌍 Clima AI - Intelligent Weather Forecasting & Climate Insights
+# 🌍 Clima AI – Global Weather Forecast & Climate Insights
 
-Clima AI is a powerful Streamlit-based weather forecasting application that combines **live weather updates**, **ML-powered prediction**, and **climate trend analysis** using open-source weather APIs and machine learning.
-
-> "Predict Tomorrow, Understand Today."
+> An intelligent, ML-powered weather platform built with Streamlit that analyzes, predicts, and recommends weather-based actions across global cities.
 
 ---
 
-## 🚀 Features
+## 🔍 About the Project
 
-- 🔍 Live weather data by city (via WeatherAPI)
-- 🧠 ML-based Max Temperature Prediction (Random Forest)
-- 📊 Historical Climate Trends (Temp, Rain, Wind, Humidity)
-- ⚠️ Z-Score-Based Anomaly Detection
-- 💡 Smart Weather Recommendations
-- 🔁 On-Demand Model Retraining
-- 🌐 Two-City Weather Comparison
-- ⬇️ Downloadable Cleaned Weather Dataset
-- 📱 Mobile-Responsive Design
+**Clima AI** is a full-featured weather dashboard that combines **live weather updates**, **machine learning predictions**, and **climate trend analytics** in a clean, modern UI. Built with RandomForestRegressor and integrated with WeatherAPI + Open-Meteo, the app is ideal for educational, research, and real-world forecasting use cases.
 
 ---
 
-## 🖼️ Preview
+## 🚀 Features at a Glance
 
-<img src="assets/climaai_preview.png" width="800"/>
-
----
-
-## 🧰 Tech Stack
-
-![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-darkred?logo=streamlit&logoColor=white)
-![Plotly](https://img.shields.io/badge/Plotly-black?logo=plotly)
-![Scikit-learn](https://img.shields.io/badge/Scikit--Learn-orange?logo=scikit-learn)
-![Open-Meteo](https://img.shields.io/badge/Open--Meteo-API-blue)
-![WeatherAPI](https://img.shields.io/badge/WeatherAPI-REST-brightgreen)
+| Feature | Description |
+|--------|-------------|
+| 🌤️ **Live Weather Data** | Real-time weather metrics via WeatherAPI |
+| 🔮 **Temperature Predictor** | Predicts next-day max temp using ML |
+| 📅 **Historical Climate Analysis** | Insights on temp, wind, rain, and humidity |
+| ⚠️ **Anomaly Detection** | Z-score-based outlier spotting by feature |
+| 💡 **Smart Recommendations** | Weather-based health/travel suggestions |
+| 📈 **Trends & Forecasting** | Monthly and yearly analytics |
+| ✍️ **Custom Forecast** | Predict temp using user-defined weather parameters |
+| ⬇️ **Downloadable Dataset** | Cleaned and prepared CSV data output |
 
 ---
 
-## 🛠️ Installation & Setup
+## 🧠 Machine Learning Workflow
 
-### 1. Clone the Repository
+- ✔️ Weather data collected via Open-Meteo API
+- 🔄 Daily aggregation (Max, Min, Rain, Wind, Humidity)
+- 🔍 Z-Score anomaly detection
+- 🧱 Feature columns selected: ['temp_max', 'temp_min', 'rain', 'wind', 'humidity']
+- 🤖 Trained model: `RandomForestRegressor`
+- 💾 Target: Next-day `temp_max` (shifted column)
 
-```bash
-git clone https://github.com/your-username/clima-ai.git
-cd clima-ai
+---
+
+## 🗂️ Project Structure
+
+```
+ClimaAI/
+├── app.py                    # Streamlit main app
+├── assets/
+│   └── climaai_preview.png   # App screenshot / thumbnail
+├── requirements.txt          # Python dependencies
+├── README.md                 # Project documentation
 ```
 
-### 2. Install Dependencies
+---
 
+## 🛠️ Tech Stack
+
+- **Frontend/UI**: Streamlit
+- **Backend/ML**: Python, scikit-learn, pandas, numpy
+- **Visualization**: Plotly, Matplotlib
+- **Model**: RandomForestRegressor
+- **APIs**: Open-Meteo, WeatherAPI
+- **Geocoding**: geopy (Nominatim)
+
+---
+
+## 🧪 How to Run the Project
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/farhannaushad08/Clima-AI.git
+cd Clima-AI
+```
+
+### 2. Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Configure API Key
+### 3. Add API Key
 
-Create a file `.streamlit/secrets.toml` and add your [WeatherAPI](https://www.weatherapi.com/) key:
-
+Create a `.streamlit/secrets.toml` file:
 ```toml
 WEATHERAPI_KEY = "your_api_key_here"
 ```
 
-### 4. Run the App
-
+### 4. Launch the app
 ```bash
 streamlit run app.py
 ```
 
---
+---
 
-## 📦 Requirements
+## 🌐 Deployment
 
-See [`requirements.txt`](requirements.txt)
+You can deploy Clima AI on [Streamlit Cloud](https://streamlit.io/cloud) or any cloud service.
+
+**Steps:**
+- Upload to GitHub
+- Create a new Streamlit app
+- Set `app.py` as the entry file
+- Add your WeatherAPI key via secret manager
 
 ---
 
-## 📂 Project Structure
+## 🙌 Final Note
 
-```
-├── app.py                  # Main Streamlit app
-├── assets/
-│   └── climaai_preview.png  # Thumbnail preview
-├── requirements.txt
-└── README.md
-```
+**Clima AI** turns complex weather data into visual, actionable insights using AI. It’s perfect for curious minds, students, researchers, and developers exploring applied machine learning in climate systems.
 
 ---
-
 
