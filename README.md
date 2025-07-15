@@ -9,6 +9,20 @@
 
 **Clima AI** is a full-featured weather dashboard that combines **live weather updates**, **machine learning predictions**, and **climate trend analytics** in a clean, modern UI. Built with RandomForestRegressor and integrated with WeatherAPI + Open-Meteo, the app is ideal for educational, research, and real-world forecasting use cases.
 
+
+---
+
+## 🖼️ Preview
+
+<img src="assets/climaai_preview.png" width="800"/>
+
+## 🎥 Demo
+
+<video width="800" controls>
+  <source src="assets/climaai_demo.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+
 ---
 
 ## 🚀 Features at a Glance
