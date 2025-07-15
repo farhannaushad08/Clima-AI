@@ -14,7 +14,7 @@
 
 ## 🖼️ Preview
 
-<img src="assests/climaai_preview.png" width="800"/>
+<img src="assests/climaai_preview.png" width="266"/>
 
 ## 🎥 Demo
 
