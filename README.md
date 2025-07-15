@@ -14,12 +14,12 @@
 
 ## 🖼️ Preview
 
-<img src="assets/climaai_preview.png" width="800"/>
+<img src="assests/climaai_preview.png" width="800"/>
 
 ## 🎥 Demo
 
 <video width="800" controls>
-  <source src="assets/climaai_demo.webm" type="video/webm">
+  <source src="assests/climaai_demo.webm" type="video/webm">
   Your browser does not support the video tag.
 </video>
 
