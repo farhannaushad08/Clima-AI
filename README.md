@@ -64,7 +64,7 @@ ClimaAI/
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Frontend/UI**: Streamlit
 - **Backend/ML**: Python, scikit-learn, pandas, numpy
